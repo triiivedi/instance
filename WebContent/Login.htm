@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Login</title>
+<meta name="Microsoft Theme" content="blueprnt 011">
+</head>	
+<body bgcolor="#FFFFFF" background="blutextb.gif" text="#003399" link="#3366FF" vlink="#9900FF" alink="#000066">
+     
+	<CENTER>
+  
+	<H1> <b><font size="5" face="Times New Roman" color="#000080"><u><dfn> 
+    Login  </dfn></u></font></b>  </H1>
+    
+	</CENTER>
+	<SCRIPT language="JavaScript">
+  	function validate()
+  	{
+	  	if(document.frm.UserName.value==""||document.frm.Password.value=="")
+		{
+  			alert("UserName or Password cannot be blank!!");
+			return;
+  		}
+  	  	document.frm.action="Validate.jsp";
+  		document.frm.submit();
+  	}
+	</SCRIPT>
+	<form name = frm method="POST">
+	<p align="center">&nbsp;</p>
+	<p align="center">&nbsp;</p>
+   
+  	<TABLE ALIGN="center" height="57">
+  	<TR>
+  		<TD >
+             
+        	<b>UserName:</b>
+            
+  		</TD>
+  		<TD >	
+             
+    		<input type="text" name="UserName" size="20" tabindex="1">
+          
+     		</TD>
+   	</TR>
+   	<TR>
+    		<TD >
+          
+        	<b>Password:</b>
+         
+    		</TD>
+    		<TD >
+          
+    		<input type="password" name="Password" size="20" tabindex="2">
+           
+    		</TD>
+    	<TR align="center">
+    		<TD colspan=2>
+            
+            <p>&nbsp;</p>
+            <p>
+    		<input type="button" value="  Login  " name="B1" onclick="validate();" tabindex="3" style="color: #000080; font-size: 18pt; font-family: Times New Roman; font-weight: bold">
+            </p>
+             
+    		</TD>
+    	</TR>
+    	 
+  	</TABLE>
+    
+  	</form>
+   
+</body>
+</HTML>
